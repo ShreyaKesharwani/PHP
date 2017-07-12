@@ -1,0 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['loggedin'])){
+	session_destroy();
+	header("location:log.php");
+}
+else{
+	header("location:log.php");
+}
+?>
